@@ -3,7 +3,7 @@
 
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
-};
+}
 
 html,
 body {
@@ -13,11 +13,11 @@ body {
   color: white;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
-};
+}
 
 section {
   width: 100dvw;
-};
+}
 
 @theme {
   --font-sans: "Mona Sans", sans-serif;
@@ -27,7 +27,7 @@ section {
   --color-black-200: #282732;
   --color-blue-50: #839cb5;
   --color-blue-100: #2d2d38;
-};
+}
 
 @layer utilities {
   .flex-center {
@@ -36,7 +36,7 @@ section {
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
   }
-};
+}
 
 @layer components {
   .padding-x {
@@ -320,20 +320,20 @@ section {
       }
     }
   }
-};
+}
 
 /* Hero text slider starts */
 .slide {
   display: inline-block;
   flex-direction: column;
   transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
-};
+}
 
 .wrapper {
   display: flex;
   flex-direction: column;
   animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
-};
+}
 
 @keyframes wordSlider {
   0% {
@@ -360,7 +360,7 @@ section {
   87.5% {
     transform: translateY(-87.5%);
   }
-};
+}
 
 /* Hero Text slider ends */
 
@@ -374,7 +374,7 @@ section {
     #fd5c79 62.83%,
     #6d45ce 92.91%
   );
-};
+}
 
 .gradient-edge:nth-of-type(1) {
   left: 0;
@@ -384,7 +384,7 @@ section {
     rgba(0, 0, 0, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-};
+}
 .gradient-edge:nth-of-type(2) {
   right: 0;
   background: linear-gradient(
@@ -392,14 +392,14 @@ section {
     rgba(0, 0, 0, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-};
+}
 
 /* marquee */
 .marquee {
   width: 100dvw;
   overflow: hidden;
   position: relative;
-};
+}
 .marquee-box {
   display: flex;
   align-items: center;
@@ -408,10 +408,10 @@ section {
   position: absolute;
   overflow: hidden;
   animation: marquee 60s linear infinite;
-};
+}
 .marquee-item {
   float: left;
-};
+}
 @keyframes marquee {
   0% {
     left: 0;
@@ -419,7 +419,7 @@ section {
   100% {
     left: -100%;
   }
-};
+}
 /* marquee end */
 
 .card {
@@ -428,7 +428,7 @@ section {
   z-index: 40;
   overflow: hidden;
   transition: border-color 1s ease-in-out;
-};
+}
 
 .card::before {
   position: absolute;
@@ -453,7 +453,7 @@ section {
   mask-clip: padding-box, border-box;
   opacity: 0;
   transition: 0.5s ease;
-};
+}
 
 .glow {
   pointer-events: none;
@@ -465,8 +465,8 @@ section {
   transform: translate(-50%, -50%);
   filter: blur(10px);
   filter: saturate(200);
-};
+}
 
 .card:hover::before {
   opacity: 1;
-};
+}
